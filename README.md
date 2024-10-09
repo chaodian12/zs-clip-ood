@@ -1,6 +1,6 @@
 # zs-clip-ood
 Zero-Shot Out-of-Distribution Detection by Co-generating Fine-grained Descriptions
-![main_structure](main_figure_v5.png)
+![main_structure](main4.pdf)
 ## Installation
 The project is based on PyTorch.
 Below are quick steps for installation:
