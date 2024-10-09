@@ -24,3 +24,21 @@ Please download [ImageNet-1k](http://www.image-net.org/challenges/LSVRC/2012/ind
 We use the following 4 OOD datasets for evaluation: [iNaturalist](https://arxiv.org/pdf/1707.06642.pdf), [SUN](https://vision.princeton.edu/projects/2010/SUN/paper.pdf), [Places](http://places2.csail.mit.edu/PAMI_places.pdf), and [Textures](https://arxiv.org/pdf/1311.3618.pdf).
 
 Please refer to [MOS](https://github.com/deeplearning-wisc/large_scale_ood), download OOD datasets and put them into `./data/ood_data/`.
+
+### Generation classes names and description
+
+Use following codes to generate both ood classes and describtion.
+```shell
+torchrun --nproc_per_node 1 ask_llama_to_generate.py \
+    --ckpt_dir llama-2-7b-chat/ \
+    --tokenizer_path tokenizer.model \
+    --max_seq_len 512 --max_batch_size 4
+```
+ You should download llama-2-7b checkpoints at first, and prepare a josn file including questions.
+ We provide ood classes and descriptions for ImageNet10/ImageNet20 at ![classes](ood_class) and ![description](ood_describtion) as an example.
+
+
+
+
+
+
