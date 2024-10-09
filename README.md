@@ -37,7 +37,15 @@ torchrun --nproc_per_node 1 ask_llama_to_generate.py \
  You should download llama-2-7b checkpoints at first, and prepare a josn file including questions.
  We provide ood classes and descriptions for ImageNet10/ImageNet20 at [ood_classes](ood_class) and [ood_describtion](ood_describtion) as an example.
 
-
+ ## OOD Detection
+ Run following scripts to detect OOD.
+```shell
+sh scripts/eval.sh [test_id] [id_dataset] min-max ViT-B/16
+```
+for ImageNet10 run
+```shell
+sh scripts/eval.sh test1 ImageNet10 min-max ViT-B/16
+```
 
 
 
