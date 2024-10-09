@@ -35,7 +35,7 @@ torchrun --nproc_per_node 1 ask_llama_to_generate.py \
     --max_seq_len 512 --max_batch_size 4
 ```
  You should download llama-2-7b checkpoints at first, and prepare a josn file including questions.
- We provide ood classes and descriptions for ImageNet10/ImageNet20 at ![classes](ood_class) and ![description](ood_describtion) as an example.
+ We provide ood classes and descriptions for ImageNet10/ImageNet20 at [classes](ood_class) and [description](ood_describtion) as an example.
 
 
 
