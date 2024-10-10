@@ -8,7 +8,6 @@ Below are quick steps for installation:
 conda create -n open-mmlab python=3.8 pytorch==1.10 torchvision==0.11.2 cudatoolkit=11.3 -c pytorch -y
 conda activate open-mmlab
 pip install openmim
-cd NegLabel
 mim install -e .
 pip install ftfy regex tqdm
 pip install git+https://github.com/openai/CLIP.git
